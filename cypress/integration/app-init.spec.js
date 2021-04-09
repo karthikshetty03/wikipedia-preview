@@ -26,15 +26,6 @@ const linkChecks = () => {
   });
 };
 
-const footerTesting = () => {
-  cy.get("body > div.footer > p")
-    .should("exist")
-    .and("contain", "Articles on this list are from Wikipedia")
-    .find("a")
-    .should("have.text", " View Source ")
-    .and("have.attr", "href");
-};
-
 describe("App intialization", () => {
   context("Desktop View", () => {
     beforeEach(() => {
@@ -58,7 +49,7 @@ describe("App intialization", () => {
     });
 
     it("Footer Testing", () => {
-      footerTesting();
+      cy.testingFooter();
     });
   });
 
@@ -85,7 +76,7 @@ describe("App intialization", () => {
     });
 
     it("Footer Testing", () => {
-      footerTesting();
+      cy.testingFooter();
     });
   });
 });

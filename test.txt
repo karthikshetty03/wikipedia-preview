@@ -1,0 +1,124 @@
+
+> wikipedia-preview@1.1.1 cypress:all /home/karthikshetty03/wikipedia-preview
+> cypress run
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    7.0.1                                                                              │
+  │ Browser:    Electron 89 (headless)                                                             │
+  │ Specs:      2 found (app-init.spec.js, english-article.spec.js)                                │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  app-init.spec.js                                                                (1 of 2)
+
+
+  App intialization
+    Desktop View
+      ✓ Header Testing (541ms)
+      ✓ Loads wikipedia-preview cards (451ms)
+      ✓ Check each of the article's logo (642ms)
+      ✓ Checks each of the article's link (5465ms)
+      ✓ Footer Testing (407ms)
+    Mobile View
+      ✓ Header Testing (374ms)
+      ✓ Loads wikipedia-preview cards (335ms)
+      ✓ Check each of the article's logo (394ms)
+      ✓ Checks each of the article's link (3926ms)
+      ✓ Footer Testing (416ms)
+
+
+  10 passing (13s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        10                                                                               │
+  │ Passing:      10                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     13 seconds                                                                       │
+  │ Spec Ran:     app-init.spec.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /home/karthikshetty03/wikipedia-preview/cypress/vide    (7 seconds)
+                          os/app-init.spec.js.mp4                                                   
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  english-article.spec.js                                                         (2 of 2)
+
+
+  Tests for the English articles page
+    Desktop VIew
+      ✓ Cross button testing (520ms)
+      ✓ Header Testing (436ms)
+      ✓ Title Testing (303ms)
+      ✓ Image Testing (285ms)
+      ✓ Get all popup buttons (483ms)
+      ✓ Testing Popup Cards (14488ms)
+      ✓ Footer Testing (707ms)
+    Mobile VIew
+      ✓ Cross button testing (1021ms)
+      ✓ Header Testing (378ms)
+      ✓ Title Testing (439ms)
+      ✓ Image Testing (446ms)
+      ✓ Get all popup buttons (468ms)
+      ✓ Testing Popup Cards (5850ms)
+      ✓ Footer Testing (591ms)
+
+
+  14 passing (27s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        14                                                                               │
+  │ Passing:      14                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     26 seconds                                                                       │
+  │ Spec Ran:     english-article.spec.js                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+    Compression progress:  73%
+  -  Finished processing: /home/karthikshetty03/wikipedia-preview/cypress/vide   (13 seconds)
+                          os/english-article.spec.js.mp4                                            
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  app-init.spec.js                         00:13       10       10        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  english-article.spec.js                  00:26       14       14        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:39       24       24        -        -        -  
+
