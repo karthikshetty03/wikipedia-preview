@@ -1,11 +1,3 @@
-const testHeader = () => {
-  // cy.title().should('contain', 'Wikipedia'); // ---> Test Fails
-  cy.get(".header")
-    .should("exist")
-    .and("be.visible")
-    .and("have.text", "Wikipedia Preview demo");
-};
-
 const loadPreviewCards = () => {
   cy.get("body > div.container > div .item").should("have.length", 7);
 };
@@ -44,14 +36,13 @@ const footerTesting = () => {
 };
 
 describe("App intialization", () => {
-
   context("Desktop View", () => {
     beforeEach(() => {
       cy.visit("/");
     });
 
     it("Header Testing", () => {
-      testHeader();
+      cy.testingHeader();
     });
 
     it("Loads wikipedia-preview cards", () => {
@@ -78,7 +69,7 @@ describe("App intialization", () => {
     });
 
     it("Header Testing", () => {
-      testHeader();
+      cy.testingHeader();
     });
 
     it("Loads wikipedia-preview cards", () => {
